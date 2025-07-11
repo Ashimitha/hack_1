@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neon Memory Game with Rating</title>
+  <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+  <h1>Neon Memory Game</h1>
+  <div class="controls">
+    <span>Moves: <span id="moves">0</span></span>
+    <span>Rating: <span id="stars">★★★</span></span>
+    <span>P1: <span id="score1">0</span></span>
+    <span>P2: <span id="score2">0</span></span>
+    <span>Turn: <span id="turn">1</span></span>
+    <button id="restart">Restart</button>
+  </div>
+  <div class="grid-container"></div>
+
+  </div>
+  <div id="modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h2 id="modal-message"></h2>
+      <p>Moves: <span id="finalMoves"></span></p>
+      <p>Rating: <span id="finalStars"></span></p>
+      <button id="modal-restart">Play Again</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
